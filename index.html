@@ -8,12 +8,13 @@
 
     <!-- css stuff -->
     <!-- link to reset -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/main.css">
     <title>Modules as a Concepts</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower%7COpen+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Fun with Modules!</h1>
+    <h1>Hella Fun with Modules!</h1>
     <nav data-module="nav">
         <!-- nav elements must have nav-item -->
         <ul>
@@ -26,7 +27,22 @@
     </nav>
 
     <main>
-        <section id="section1" class="panel"></section>
+        <section id="section1" class="panel">
+            <div class="bio-wrapper"> 
+                <h1 class="u-name">Click on a team member icon below!</h1>
+                <h4 class="u-role"></h4>
+                <p class="u-bio"></p>
+
+                <!-- img tag, set its source using the object -->
+
+                <img class="u-avatar hidden" src="" alt="team bio image">
+            </div>
+
+            <!-- dynamically add some team buttons here -->
+            <div class="team"></div>
+
+        </section>
+        
         <section id="section2" class="panel">panel 2</section>
         <section id="section3" class="panel"></section>
         <section id="section4" class="panel">panel 4</section>
@@ -46,6 +62,8 @@
     </footer>
 
     <a id="to-top" href="#" class="nav-item">back to top</a>
+    <script type="module" src="js/main.js"></script>
+
 </body>
 
 </html>
